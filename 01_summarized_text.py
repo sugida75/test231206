@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 #챗지피티에게 글요약을 요청하는 함수
-def asdGPT(prompt,apiKey):
+def askGPT(prompt,apiKey):
     client=openai.OpenAI(api_key='')
     response=client.chat.completions.create(
         model='gpt-3.5-turbo',
